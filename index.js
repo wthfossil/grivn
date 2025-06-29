@@ -46,7 +46,7 @@ for (const file of commandFiles) {
   } else {
     console.warn(`[WARNING] The command at ./commands/${file} is missing "data" or "execute".`);
   }
-
+}
 
 client.once(Events.ClientReady, () => {
   console.log(`🟢 Logged in as ${client.user.tag}`);
